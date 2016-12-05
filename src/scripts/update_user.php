@@ -7,9 +7,9 @@ if ($argc < 5) {
     exit();
 }
 
-$em = GetEntityManager();
+$entityManager = getEntityManager();
 /** @var \MiW16\Results\Entity\User $user */
-$user = $em
+$user = $entityManager
     ->getRepository('MiW16\Results\Entity\User')
     ->findOneById($argv[1]);
 
