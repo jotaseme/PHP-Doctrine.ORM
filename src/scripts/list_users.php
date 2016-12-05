@@ -19,7 +19,7 @@ if (in_array('--json', $argv)) {
             $user->getId(),
             $user->getUsername(),
             $user->getEmail(),
-            $user->isEnabled()
+            $user->getEnabled()
         ),
         PHP_EOL;
         $items++;

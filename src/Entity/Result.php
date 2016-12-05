@@ -68,6 +68,88 @@ class Result implements \JsonSerializable
     }
 
     /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set result
+     *
+     * @param integer $result
+     *
+     * @return Result
+     */
+    public function setResult($result)
+    {
+        $this->result = $result;
+
+        return $this;
+    }
+
+    /**
+     * Get result
+     *
+     * @return integer
+     */
+    public function getResult()
+    {
+        return $this->result;
+    }
+
+    /**
+     * Set time
+     *
+     * @param \DateTime $time
+     *
+     * @return Result
+     */
+    public function setTime($time)
+    {
+        $this->time = $time;
+
+        return $this;
+    }
+
+    /**
+     * Get time
+     *
+     * @return \DateTime
+     */
+    public function getTime()
+    {
+        return $this->time;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \MiW16\Results\Entity\User $user
+     *
+     * @return Result
+     */
+    public function setUser(\MiW16\Results\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \MiW16\Results\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
      * @return string
      * @link http://php.net/manual/en/language.oop5.magic.php#language.oop5.magic.tostring
      */
