@@ -250,6 +250,13 @@ class User implements \JsonSerializable
      */
     public function jsonSerialize(): array
     {
-        // TODO
+        return array(
+            'username' => $this->username,
+            'email' => $this->email,
+            'enabled' => $this->enabled,
+            'password' => $this->password,
+            'last_login' => $this->lastLogin,
+            'token' => $this->token
+        );
     }
 }
