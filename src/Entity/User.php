@@ -1,4 +1,4 @@
-<?php   // src/Entity/User.php
+<?php
 
 namespace MiW16\Results\Entity;
 

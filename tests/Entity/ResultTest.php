@@ -2,8 +2,6 @@
 
 namespace MiW16\Results\Tests\Entity;
 
-use MiW16\Results\Entity\Result;
-use MiW16\Results\Entity\User;
 
 /**
  * Class ResultTest
