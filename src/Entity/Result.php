@@ -163,6 +163,9 @@ class Result implements \JsonSerializable
      */
     public function jsonSerialize(): array
     {
-        // TODO
+        return array(
+            'username' => $this->user->getUsername(),
+            'result' => $this->result
+        );
     }
 }
