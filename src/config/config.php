@@ -12,6 +12,6 @@ define('DATABASE_CHARSET', 'UTF8');
 /*
  * configuración Doctrine
  */
-define('PROXY_DIR', '/xampp/tmp');
+define('PROXY_DIR', '/wamp/www/ResultsDoctrine/tmp');
 define('ENTITY_DIR', __DIR__ . '/../Entity');
 define('DEBUG', false);  // muestra consulta SQL por la salida estándar
