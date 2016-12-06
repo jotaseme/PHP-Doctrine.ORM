@@ -1,4 +1,4 @@
-<?php   // src/scripts/list_users.php
+<?php   // src/scripts/Read_all_users.php
 
 require_once __DIR__ . '/../../bootstrap.php';
 
