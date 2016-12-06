@@ -18,7 +18,7 @@ if ($user) {
     $user->setEmail($argv[3]);
     $user->setPassword($argv[4]);
 
-    $em->flush();
+    $entityManager->flush();
 } else {
     echo 'Usuario no encontrado';
 }
