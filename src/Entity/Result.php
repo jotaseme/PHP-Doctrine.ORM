@@ -165,7 +165,8 @@ class Result implements \JsonSerializable
     {
         return array(
             'username' => $this->user->getUsername(),
-            'result' => $this->result
+            'result' => $this->result,
+            'fecha' => $this->time->format("Y-m-d H:i:s")
         );
     }
 }
