@@ -6,7 +6,6 @@ use MiW16\Results\Entity\User;
 use PHPUnit_Framework_Error_Notice;
 use PHPUnit_Framework_Error_Warning;
 
-
 /**
  * Class UserTest
  * @package MiW16\Results\Tests\Entity
@@ -15,7 +14,7 @@ use PHPUnit_Framework_Error_Warning;
 class UserTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \MiW16\Results\Entity\User $user
+     * @var User $user
      */
     protected $user;
 
