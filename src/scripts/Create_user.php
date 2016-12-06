@@ -5,7 +5,7 @@ use MiW16\Results\Entity\User;
 require_once __DIR__ . '/../../bootstrap.php';
 
 
-if ($argc < 2) {
+if ($argc < 4) {
     echo "$argv[0] <username> <email> <password>" . PHP_EOL;
     exit();
 }
