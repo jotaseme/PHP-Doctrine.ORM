@@ -15,7 +15,7 @@ if (in_array('--json', $argv)) {
     /** @var \MiW16\Results\Entity\Result $result */
     foreach ($results as $result) {
         echo sprintf(
-            '- %2d: %20s %30s %7s',
+            '- %2d: %20s %30d %7s',
             $result->getId(),
             $result->getUser()->getUsername(),
             $result->getResult(),
