@@ -10,6 +10,7 @@ if ($argc < 2) {
 }
 $entityManager = getEntityManager();
 
+/** @var \MiW16\Results\Entity\User $user */
 $user = $entityManager
     ->getRepository('MiW16\Results\Entity\User')
     ->findOneById($argv[1]);
@@ -19,8 +20,6 @@ if ($user) {
         echo json_encode($user);
     } else {
         echo PHP_EOL . sprintf("  %2d: %20s %30s %7s\n", 'Id', 'Username:', 'Email:', 'Enabled:');
-        /** @var \MiW16\Results\Entity\User $user */
-
         echo sprintf(
             '- %2d: %20s %30s %7s',
             $user->getId(),
