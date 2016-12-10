@@ -155,7 +155,7 @@ class Result implements \JsonSerializable
      */
     public function __toString(): string
     {
-        // TODO
+        return $this->result;
     }
 
     /**
@@ -164,6 +164,7 @@ class Result implements \JsonSerializable
     public function jsonSerialize(): array
     {
         return array(
+            'id' => $this->id,
             'username' => $this->user->getUsername(),
             'result' => $this->result,
             'fecha' => $this->time->format("Y-m-d H:i:s")
