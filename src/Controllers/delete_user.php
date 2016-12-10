@@ -1,4 +1,5 @@
 <?php
+
 require_once __DIR__ . '/../../bootstrap.php';
 $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
 
@@ -9,19 +10,7 @@ $userRepository = $entityManager->getRepository('MiW16\Results\Entity\User');
 $user = $userRepository->find($id);
 
 if($user){
-    $username = $_POST["username"];
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-
-  /*
-   * Aqui se deberia añadir tratamiento de las variables que entran por POST
-   *
-   */
-
-    $user->setUsername($username);
-    $user->setEmail($email);
-    $user->setPassword($password);
-
+    $entityManager->remove($user);
     $entityManager->flush();
     header('Location: '.$root.'users');
     die();
@@ -29,7 +18,3 @@ if($user){
 }else{
     echo "Ha ocurrido un error";
 }
-
-
-
-

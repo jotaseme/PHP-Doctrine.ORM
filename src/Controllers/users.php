@@ -17,3 +17,6 @@ if(empty($users)){
         echo $user->getEmail();
     }
 }
+echo '<hr/>';
+echo ' <a href="'.$root . 'users/new"><button>New user</button></a>';
+
