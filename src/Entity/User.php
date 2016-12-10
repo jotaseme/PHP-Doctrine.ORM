@@ -242,7 +242,7 @@ class User implements \JsonSerializable
      */
     public function __toString(): string
     {
-        // TODO
+        return $this->username;
     }
 
     /**
@@ -251,6 +251,7 @@ class User implements \JsonSerializable
     public function jsonSerialize(): array
     {
         return array(
+            'id' => $this->id,
             'username' => $this->username,
             'email' => $this->email,
             'enabled' => $this->enabled,
